@@ -1,4 +1,4 @@
-import { AlertCircle, FileText, Activity, TrendingUp, ShieldAlert } from 'lucide-react';
+//import { AlertCircle, FileText, Activity, TrendingUp, ShieldAlert } from 'lucide-react';
 
 const ScienceReport: React.FC = () => {
   return (
