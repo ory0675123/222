@@ -1,0 +1,91 @@
+:root {
+  --primary: #0f172a;
+  --secondary: #1e293b;
+  --accent-orange: #f97316;
+  --accent-red: #ef4444;
+  --text-white: #f8fafc;
+  --text-gray: #94a3b8;
+  --bg-dark: #020617;
+  
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, select {
+  background-color: var(--secondary);
+  border: 1px solid var(--text-gray);
+  color: var(--text-white);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+input:focus, select:focus {
+  border-color: var(--accent-orange);
+}
+
+section {
+  padding: 4rem 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 6rem 1.5rem;
+  }
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.text-orange { color: var(--accent-orange); }
+.text-red { color: var(--accent-red); }
+.text-gray { color: var(--text-gray); }
+
+h1, h2, h3 {
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+h1 { font-size: 2.5rem; font-weight: 800; }
+h2 { font-size: 2rem; font-weight: 700; }
+h3 { font-size: 1.5rem; font-weight: 700; }
+
+@media (min-width: 768px) {
+  h1 { font-size: 3.5rem; }
+  h2 { font-size: 2.5rem; }
+}
